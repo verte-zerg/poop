@@ -5,8 +5,8 @@
     .minimum_zig_version = "0.14.0",
     .dependencies = .{
         .scoop = .{
-            .url = "git+https://codeberg.org/tensorush/scoop.git#a10ec7fa96510069c2fd6f85e0eb1790c5d7e288",
-            .hash = "scoop-0.3.0-lhAxpyHUAAAPZIz5GDPHjdPMttNO87KefT7i9Mk5AWm7",
+            .url = "git+https://codeberg.org/tensorush/scoop.git#34513a0979534ae70d0e85963bb958ac85d73329",
+            .hash = "scoop-0.3.0-lhAxp-rUAAAc_Wjo-3mDsxmGTlbvGPsVsmsURJ2Zaath",
             .lazy = true,
         },
     },

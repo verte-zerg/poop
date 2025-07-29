@@ -22,7 +22,7 @@ jobs:
       - name: Set up Zig
         uses: mlugg/setup-zig@v1
         with:
-          version: 0.14.0
+          version: 0.14.1
 
       - name: Run exe step
         run: sudo zig build exe -- 'zig build-exe examples/hello.zig' 'zig build-exe -O ReleaseFast examples/hello.zig'
@@ -37,7 +37,7 @@ jobs:
       - name: Set up Zig
         uses: mlugg/setup-zig@v1
         with:
-          version: 0.14.0
+          version: 0.14.1
 
       - name: Run fmt step
         run: zig build fmt

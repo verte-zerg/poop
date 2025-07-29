@@ -18,23 +18,14 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-        with:
-          path: 'poop'
-
-      - name: Clone scoop repository
-        run: git clone https://codeberg.org/tensorush/scoop.git
 
       - name: Set up Zig
         uses: mlugg/setup-zig@v2
         with:
           version: 0.14.1
 
-      - name: Build scoop
-        continue-on-error: true
-        run: cd scoop && zig build
-
       - name: Build poop
-        run: cd poop && zig fetch --save ../scoop && zig build
+        run: zig build
 
   fmt:
     runs-on: ubuntu-latest

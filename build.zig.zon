@@ -7,7 +7,6 @@
         .scoop = .{
             .url = "git+https://codeberg.org/tensorush/scoop.git#34513a0979534ae70d0e85963bb958ac85d73329",
             .hash = "scoop-0.3.0-lhAxp-rUAAAc_Wjo-3mDsxmGTlbvGPsVsmsURJ2Zaath",
-            .lazy = true,
         },
     },
     .paths = .{

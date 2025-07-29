@@ -13,7 +13,7 @@ pub fn build(b: *std.Build) !void {
     const root_source_file = b.path("src/main.zig");
 
     // Dependencies
-    const scoop_dep_lazy = if (target_os.isDarwin()) b.lazyDependency("scoop", .{
+    const scoop_dep_lazy = if (target_os.isDarwin()) b.dependency("scoop", .{
         .target = target,
         .optimize = optimize,
     }) else null;
